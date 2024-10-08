@@ -5,7 +5,28 @@ import random
 questions = [
     {"question": "What is the name of the main character in the game 'The Last of Us'?", "answer": "Ellie"},
     {"question": "Which game is known for its iconic character 'Master Chief'?", "answer": "Halo"},
-    # ... (other questions remain unchanged)
+    {"question": "What is the name of the popular mobile game where you have to swipe to match candies?", "answer": "Candy Crush"},
+    {"question": "Which game is set in the fictional world of Spira?", "answer": "Final Fantasy X"},
+    {"question": "What is the name of the game where you have to build and manage your own city?", "answer": "SimCity"},
+    {"question": "Which game is known for its fast-paced action and 'Devil Trigger' ability?", "answer": "Devil May Cry"},
+    {"question": "What is the name of the game where you have to solve puzzles to progress through a mysterious world?", "answer": "Portal"},
+    {"question": "Which game is set in the world of Azeroth?", "answer": "World of Warcraft"},
+    {"question": "What is the name of the game where you have to collect resources and build structures to survive?", "answer": "Minecraft"},
+    {"question": "Which game is known for its 'parkour' mechanics and futuristic setting?", "answer": "Mirror's Edge"},
+    {"question": "What is the name of the game where you have to control a character with a 'Portal Gun'?", "answer": "Portal 2"},
+    {"question": "Which game is set in the world of Tamriel?", "answer": "The Elder Scrolls V: Skyrim"},
+    {"question": "What is the name of the game where you have to build and manage your own theme park?", "answer": "RollerCoaster Tycoon"},
+    {"question": "Which game is known for its 'stealth' mechanics and protagonist 'Solid Snake'?", "answer": "Metal Gear Solid"},
+    {"question": "What is the name of the game where you have to collect 'Power Stars' to progress?", "answer": "Super Mario 64"},
+    {"question": "Which game is set in the world of Pandora?", "answer": "Borderlands"},
+    {"question": "What is the name of the game where you have to control a character with a 'BFG'?", "answer": "Doom"},
+    {"question": "Which game is known for its 'survival horror' elements and protagonist 'Leon S. Kennedy'?", "answer": "Resident Evil 4"},
+    {"question": "What is the name of the game where you have to build and manage your own civilization?", "answer": "Civilization VI"},
+    {"question": "Which game is set in the world of Rapture?", "answer": "BioShock"},
+    {"question": "What is the name of the game where you have to control a character with a 'Gravity Gun'?", "answer": "Half-Life 2"},
+    {"question": "Which game is known for its 'open-world' design and protagonist 'Niko Bellic'?", "answer": "Grand Theft Auto IV"},
+    {"question": "What is the name of the game where you have to collect 'Chaos Emeralds' to progress?", "answer": "Sonic the Hedgehog"},
+    {"question": "Which game is set in the world of Thedas?", "answer": "Dragon Age: Inquisition"},
     {"question": "What is the name of the game where you have to control a character with a 'Lightsaber'?", "answer": "Star Wars: Knights of the Old Republic"}
 ]
 
@@ -40,7 +61,6 @@ st.markdown("""
         font-weight: bold;
         margin: 20px 0;
         text-shadow: 2px 2px 4px #aaa;
-        animation: slideIn 1s forwards; /* Slide in animation */
     }
     .question {
         font-size: 24px;
@@ -51,7 +71,7 @@ st.markdown("""
     }
     .next-button, .show-answer-button {
         display: block;
-        width: 200px; /* Fixed width for buttons */
+        width: 100%;
         background-color: #32cd32;
         color: white;
         font-size: 20px;
@@ -61,11 +81,10 @@ st.markdown("""
         cursor: pointer;
         text-align: center;
         margin-top: 20px;
-        transition: background-color 0.3s, transform 0.3s; /* Add transform for hover */
+        transition: background-color 0.3s;
     }
     .next-button:hover, .show-answer-button:hover {
         background-color: #28a745;
-        transform: scale(1.05); /* Slightly increase size on hover */
     }
     .end-message {
         text-align: center;
@@ -77,10 +96,6 @@ st.markdown("""
     @keyframes fadeIn {
         from { opacity: 0; }
         to { opacity: 1; }
-    }
-    @keyframes slideIn {
-        from { transform: translateY(-50px); opacity: 0; }
-        to { transform: translateY(0); opacity: 1; }
     }
     </style>
 """, unsafe_allow_html=True)
@@ -97,7 +112,7 @@ if st.session_state.question_index < len(st.session_state.selected_questions):
                  unsafe_allow_html=True)
 
     # Button to show the answer
-    if st.button("Show Answer", key="show_answer_button"):
+    if st.button("Show Answer"):
         st.session_state.show_answer = True  # Reveal the answer
 
     # Display the answer if it has been revealed
@@ -105,7 +120,7 @@ if st.session_state.question_index < len(st.session_state.selected_questions):
         st.markdown(f'<div class="question">Answer: {current_question["answer"]}</div>', unsafe_allow_html=True)
 
     # Button to get the next question
-    if st.button("Next", key="next_button"):
+    if st.button("Next"):
         # Move to the next question only if the answer is shown
         if st.session_state.show_answer:
             st.session_state.question_index += 1
