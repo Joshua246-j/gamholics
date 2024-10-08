@@ -3,32 +3,33 @@ import random
 
 # Define the questions and answers
 questions = [
-    {"question": "What is the name of the main character in the game 'The Last of Us'?", "answer": "Ellie"},
-    {"question": "Which game features the iconic character 'Master Chief'?", "answer": "Halo"},
-    {"question": "What is the name of the game series where you control a character with a 'Lightsaber'?", "answer": "Star Wars: Knights of the Old Republic"},
-    {"question": "Which battle royale game was developed by Epic Games and became a cultural phenomenon?", "answer": "Fortnite"},
-    {"question": "Which MOBA game developed by Riot Games features champions with unique abilities?", "answer": "League of Legends"},
-    {"question": "What survival game allows players to craft, build, and explore in a blocky world?", "answer": "Minecraft"},
-    {"question": "What tactical shooter developed by Ubisoft emphasizes teamwork and strategy?", "answer": "Rainbow Six Siege"},
-    {"question": "Which open-world RPG features Geralt of Rivia as the main character?", "answer": "The Witcher 3: Wild Hunt"},
-    {"question": "In which game do players hunt massive monsters in a fantasy world?", "answer": "Monster Hunter: World"},
-    {"question": "What life simulation game allows players to create and control people in a virtual world?", "answer": "The Sims 4"},
-    {"question": "What horror game features players trying to survive against a killer in an asymmetrical format?", "answer": "Dead by Daylight"},
-    {"question": "Which racing game is known for its realistic driving physics and extensive car customization?", "answer": "Forza Horizon 5"},
-    {"question": "What game based on the One Piece franchise features RPG elements and character collecting?", "answer": "One Piece Treasure Cruise"},
-    {"question": "In which action RPG do players explore a vast open world and collect elemental characters?", "answer": "Genshin Impact"},
-    {"question": "Which racing game allows players to explore a fictional version of Mexico in an open-world setting?", "answer": "Forza Horizon 5"},
-    {"question": "What VR game lets players slash blocks to the beat of music using lightsabers?", "answer": "Beat Saber"},
-    {"question": "Which game developed by Activision features a battle royale mode alongside traditional multiplayer?", "answer": "Call of Duty: Warzone"},
-    {"question": "What tactical shooter features characters with unique abilities and is developed by Riot Games?", "answer": "Valorant"},
-    {"question": "Which space exploration game allows players to build bases on procedurally generated planets?", "answer": "No Man's Sky"},
+    {"question": "What is the name of the main character in 'The Last of Us'?", "answer": "Ellie"},
+    {"question": "Which iconic game features 'Master Chief' as the protagonist?", "answer": "Halo"},
+    {"question": "In which game do players battle using 'Lightsabers'?", "answer": "Star Wars: Knights of the Old Republic"},
+    {"question": "What battle royale game developed by Epic Games took the world by storm?", "answer": "Fortnite"},
+    {"question": "What is the main goal in 'League of Legends'?", "answer": "To destroy the opposing team's Nexus"},
+    {"question": "Which game allows players to build and explore in a blocky world?", "answer": "Minecraft"},
+    {"question": "Which tactical shooter from Ubisoft focuses on team-based gameplay?", "answer": "Rainbow Six Siege"},
+    {"question": "In which RPG does Geralt of Rivia embark on a quest across a fantasy world?", "answer": "The Witcher 3: Wild Hunt"},
+    {"question": "What game involves players hunting massive creatures in a rich fantasy setting?", "answer": "Monster Hunter: World"},
+    {"question": "Which life simulation game allows players to create and control virtual lives?", "answer": "The Sims 4"},
+    {"question": "What horror multiplayer game features one player as a killer and others as survivors?", "answer": "Dead by Daylight"},
+    {"question": "Which racing game series is known for its realistic driving mechanics and customization?", "answer": "Forza Horizon"},
     {"question": "What mobile game involves matching colorful candies to complete levels?", "answer": "Candy Crush Saga"},
-    {"question": "Which narrative-driven game allows players to make impactful choices that affect the story's outcome?", "answer": "Life is Strange"},
-    {"question": "What strategy game allows players to build and manage a civilization through various historical eras?", "answer": "Civilization VI"},
-    {"question": "In which multiplayer game do players explore a post-apocalyptic world filled with infected humans?", "answer": "The Last of Us Part II"},
-    {"question": "What mobile battle royale game developed by Tencent features a variety of gameplay modes?", "answer": "PUBG Mobile"},
-    {"question": "Which card game is set in the Magic: The Gathering universe and allows players to build decks?", "answer": "Magic: The Gathering Arena"},
-    {"question": "In which game do players team up in squads to compete in tactical matches set in a futuristic environment?", "answer": "Apex Legends"}
+    {"question": "Which action RPG lets players explore a vibrant world with elemental characters?", "answer": "Genshin Impact"},
+    {"question": "What VR game allows players to slice blocks to music using lightsabers?", "answer": "Beat Saber"},
+    {"question": "Which game features a battle royale mode alongside traditional multiplayer modes?", "answer": "Call of Duty: Warzone"},
+    {"question": "What tactical shooter developed by Riot Games features unique agent abilities?", "answer": "Valorant"},
+    {"question": "In which game can players build bases on procedurally generated planets?", "answer": "No Man's Sky"},
+    {"question": "What popular mobile battle royale game developed by Tencent has taken the world by storm?", "answer": "PUBG Mobile"},
+    {"question": "What strategy game lets players build and manage civilizations through history?", "answer": "Civilization VI"},
+    {"question": "What narrative-driven game allows players to make choices that impact the story?", "answer": "Life is Strange"},
+    {"question": "In which game do players cooperate to survive in a world filled with infected?", "answer": "The Last of Us Part II"},
+    {"question": "What card game set in the Magic: The Gathering universe allows players to build decks?", "answer": "Magic: The Gathering Arena"},
+    {"question": "Which game features characters from various franchises competing in a battle royale?", "answer": "Super Smash Bros. Ultimate"},
+    {"question": "What sandbox game allows players to create and share levels and worlds?", "answer": "LittleBigPlanet"},
+    {"question": "In which racing game do players compete in a fictional version of Mexico?", "answer": "Forza Horizon 5"},
+    {"question": "What tactical RPG features permadeath and strategic turn-based combat?", "answer": "Fire Emblem: Three Houses"}
 ]
 
 # Initialize session state
@@ -70,7 +71,7 @@ st.markdown("""
         font-size: 24px;
         margin: 20px 0;
         text-align: center;
-        color: #00274d; /* Deep blue for a professional look */
+        color: #ffcc00; /* Bright yellow for better visibility */
         animation: fadeIn 1s ease-in;
     }
     .next-button, .show-answer-button {
