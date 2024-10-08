@@ -19,8 +19,7 @@ questions = [
     {"question": "Which action RPG lets players explore a vibrant world with elemental characters?", "answer": "Genshin Impact"},
     {"question": "What VR game allows players to slice blocks to music using lightsabers?", "answer": "Beat Saber"},
     {"question": "Which game features a battle royale mode alongside traditional multiplayer modes?", "answer": "Call of Duty: Warzone"},
-    {"question": "What tactical shooter developed by Riot Games features unique agent abilities?", "answer": "Valorant"},
-    {"question": "In which game can players build bases on procedurally generated planets?", "answer": "No Man's Sky"},
+    {"question": "What tactical RPG features permadeath and strategic turn-based combat?", "answer": "Fire Emblem: Three Houses"},
     {"question": "What popular mobile battle royale game developed by Tencent has taken the world by storm?", "answer": "PUBG Mobile"},
     {"question": "What strategy game lets players build and manage civilizations through history?", "answer": "Civilization VI"},
     {"question": "What narrative-driven game allows players to make choices that impact the story?", "answer": "Life is Strange"},
@@ -29,7 +28,7 @@ questions = [
     {"question": "Which game features characters from various franchises competing in a battle royale?", "answer": "Super Smash Bros. Ultimate"},
     {"question": "What sandbox game allows players to create and share levels and worlds?", "answer": "LittleBigPlanet"},
     {"question": "In which racing game do players compete in a fictional version of Mexico?", "answer": "Forza Horizon 5"},
-    {"question": "What tactical RPG features permadeath and strategic turn-based combat?", "answer": "Fire Emblem: Three Houses"}
+    {"question": "What tactical shooter developed by Riot Games features unique agent abilities?", "answer": "Valorant"}
 ]
 
 # Initialize session state
@@ -58,20 +57,21 @@ st.markdown("""
         align-items: center; /* Center content horizontally */
     }
     .title {
-        font-size: 50px;
+        font-size: 40px; /* Scaled down size */
         background: linear-gradient(90deg, #ff6a00, #ee0979); /* Gradient color for the title */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: bold;
         margin: 20px 0;
         text-shadow: 2px 2px 4px #aaa;
+        text-align: center; /* Center the title */
         animation: slideIn 1s forwards; /* Slide in animation */
     }
     .question {
         font-size: 24px;
         margin: 20px 0;
         text-align: center;
-        color: #ffcc00; /* Bright yellow for better visibility */
+        color: #003366; /* Dark blue for a formal look */
         animation: fadeIn 1s ease-in;
     }
     .next-button, .show-answer-button {
