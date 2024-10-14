@@ -119,7 +119,7 @@ st.markdown(
 
 # Define the questions for both rounds (25 questions each)
 questions_round_1 = [
-    {"question": "Which game features a cat that talks back to you?", "answer": "Talking Angela"},
+    {"question": "Which game features a cat that talks back to you?", "answer": "Talking tom"},
     {"question": "What endless running game involves dodging trains?", "answer": "Subway Surfers"},
     {"question": "In which racing game do you drive various cars to win races?", "answer": "Need for Speed"},
     {"question": "What strategy game allows you to build and upgrade a village?", "answer": "Clash of Clans"},
